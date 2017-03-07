@@ -11,7 +11,7 @@ export default (
   <Route path="/" component={App}>
     <IndexRoute component={Monitor} />
     <Route path="/monitor" component={Monitor} />
-    <Route path="/monitor/:id" component={Account}/>
+    <Route path="/monitor/:id" component={Account} />
     <Route path="/builder" component={Builder} />
     <Route path="/feeds" component={Feeds} />
     <Route path="*" component={NotFound} />
