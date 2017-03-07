@@ -19,6 +19,10 @@ export default class Login extends Component {
     document.getElementById('pageBody').className = 'gray-bg';
   }
 
+  componentWillUnmount() {
+    document.getElementById('pageBody').className = 'pace-done';
+  }
+
   render() {
     return (
       <div className="middle-box text-center loginscreen animated fadeInDown">
