@@ -22,9 +22,9 @@ export default class Sidebar extends Component {
 
   render() {
     const links = [
-      {href: 'monitor', text: 'Inventory Monitor', icon: 'fa-th-large'},
-      {href: 'builder', text: 'Campaign Builder', icon: 'fa-cubes'},
-      {href: 'feeds', text: 'Data Feeds', icon: ''},
+      {href: '/monitor', text: 'Inventory Monitor', icon: 'fa-th-large'},
+      {href: '/builder', text: 'Campaign Builder', icon: 'fa-cubes'},
+      {href: '/feeds', text: 'Data Feeds', icon: ''},
     ];
 
     return (
