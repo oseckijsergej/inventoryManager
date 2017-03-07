@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import * as actions from './accountActions';
 import AccountList from './AccountList';
 import { Pagination } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 @connect(
   (state, ownProps) => ({
@@ -29,11 +30,9 @@ export default class Account extends Component {
             </h1>
           </div>
           <div className="col-xs-2">
-            <a href="home.php?actn=editad&aid=91">
-              <button className="btn btn-lg btn-warning">
-                Edit
-              </button>
-            </a>
+            <Link className="btn btn-lg btn-warning" to={`/monitor/${0}/edit`}>
+              Edit
+            </Link>
           </div>
         </div>
         <div className="row">

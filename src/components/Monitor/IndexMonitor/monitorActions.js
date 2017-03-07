@@ -1,15 +1,16 @@
 import axios from 'axios';
-import { FETCH_MONITOR_ITEMS } from '../../constants/actionTypes';
-import { SERVER_PATH } from '../../constants/appConstants';
+import { FETCH_MONITOR_ITEMS } from '../../../constants/actionTypes';
+import { SERVER_PATH } from '../../../constants/appConstants';
 
 // export const fetchMonitorItems = () => dispatch => {
 //   dispatch({
-//     type: `${FETCH_MONITOR_ITEMS}_FULFILLED`,
+//     type: FETCH_MONITOR_ITEMS,
 //     payload: axios.get(`${SERVER_PATH}/api/monitor`)
 //   });
 // };
 
 export const fetchMonitorItems = () => {
+  // Fake data
   let data = {
     data: [
       {

@@ -1,4 +1,4 @@
-import { FETCH_MONITOR_ITEMS } from '../../constants/actionTypes';
+import { FETCH_MONITOR_ITEMS } from '../../../constants/actionTypes';
 
 export default function monitorReducer(state = [], action) {
   switch (action.type) {
