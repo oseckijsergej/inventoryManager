@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { Route, IndexRedirect } from 'react-router';
 import App from './components/App';
 import Monitor from './components/Monitor';
 import Builder from './components/Builder';
@@ -9,7 +9,7 @@ import NotFound from './components/NotFound';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={Monitor} />
+    <IndexRedirect to="/monitor" />
     <Route path="/monitor" component={Monitor} />
     <Route path="/monitor/:id" component={Account} />
     <Route path="/builder" component={Builder} />
