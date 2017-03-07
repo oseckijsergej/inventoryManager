@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from './accountActions';
 import AccountList from './AccountList';
+import { Pagination } from 'react-bootstrap';
 
 @connect(
   (state, ownProps) => ({
@@ -102,7 +103,7 @@ export default class Account extends Component {
                 <tfoot>
                 <tr>
                   <td colSpan={5}>
-                    <ul className="pagination pull-right"><li className="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li><li className="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li><li className="footable-page active"><a data-page={0} href="#">1</a></li><li className="footable-page-arrow disabled"><a data-page="next" href="#next">›</a></li><li className="footable-page-arrow disabled"><a data-page="last" href="#last">»</a></li></ul>
+                    <Pagination />
                   </td>
                 </tr>
                 </tfoot>
