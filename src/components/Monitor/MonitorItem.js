@@ -9,7 +9,7 @@ const MonitorItem = ({
     <tr className="footable-even">
       <td>
         <span className="footable-toggle" />
-        <Link to={`monitor/${id}`}>{ name }</Link>
+        <Link to={`/monitor/${id}`}>{ name }</Link>
       </td>
       <td>{ googleId }</td>
       <td>{ active }</td>
