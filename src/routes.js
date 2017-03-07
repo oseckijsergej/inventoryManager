@@ -5,6 +5,7 @@ import Monitor from './components/Monitor';
 import Builder from './components/Builder';
 import Feeds from './components/Feeds';
 import Account from './components/Account';
+import NotFound from './components/NotFound';
 
 export default (
   <Route path="/" component={App}>
@@ -13,5 +14,6 @@ export default (
     <Route path="/monitor/:id" component={Account}/>
     <Route path="/builder" component={Builder} />
     <Route path="/feeds" component={Feeds} />
+    <Route path="*" component={NotFound} />
   </Route>
 );
