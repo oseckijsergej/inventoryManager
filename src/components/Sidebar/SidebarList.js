@@ -1,18 +1,24 @@
 import React, {PropTypes} from 'react';
 import NavLink from './NavLink';
+import { Link } from 'react-router';
+import { DropdownButton, MenuItem } from 'react-bootstrap';
 
 const SidebarList = ({ links }) => {
   return (
   <ul className="nav metismenu" id="side-menu" style={{display: 'block'}}>
     <li className="nav-header">
-      <div className="dropdown profile-element">
-        <a data-toggle="dropdown" className="dropdown-toggle" href="#">
-                  <span className="clear"> <span className="block m-t-xs"> <strong className="font-bold">Auto Agency Demo</strong>
-                    </span> <span className="text-muted text-xs block">Admin <b className="caret" /></span> </span> </a>
-        <ul className="dropdown-menu animated fadeInRight m-t-xs">
-          <li><a href="logout.php">Logout</a></li>
-        </ul>
+      <div>
+        <span className="clear">
+          <span className="block m-t-xs">
+            <strong className="font-bold">Auto Agency Demo</strong>
+          </span>
+        </span>
       </div>
+      <DropdownButton title="Admin" id="basic-nav-dropdown">
+        <MenuItem>
+          <Link to="/login">Logout</Link>
+        </MenuItem>
+      </DropdownButton>
       <div className="logo-element">
         IC
       </div>

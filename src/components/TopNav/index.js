@@ -2,6 +2,7 @@ import React, {PropTypes, Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from './topNavActions';
+import { Link } from 'react-router';
 
 @connect(
   (state, ownProps) => ({
@@ -48,9 +49,9 @@ export default class TopNav extends Component {
           </div>
           <ul className="nav navbar-top-links navbar-right">
             <li>
-              <a href="logout.php">
+              <Link to="/login">
                 <i className="fa fa-sign-out" /> Log out
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
