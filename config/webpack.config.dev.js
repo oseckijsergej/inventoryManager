@@ -123,6 +123,7 @@ module.exports = {
           plugins: [
             'transform-runtime',
             'transform-decorators-legacy',
+            'transform-function-bind',
           ],
           presets: ['es2015', 'react', 'stage-1'],
           // This is a feature of `babel-loader` for webpack (not Babel itself).
